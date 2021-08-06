@@ -96,6 +96,7 @@ form.addEventListener("submit", function (e) {
         showErrorPassword(password, "Please Enter a valid Password");
     } else if (password.value.length > length) {
         lengthError(password, "Please use 7 character for your password");
+        break;
     } else {
         showSuccess(password);
     }
@@ -105,6 +106,6 @@ form.addEventListener("submit", function (e) {
         alert("Please enter a valid Password");
         showErrorPassword2(password2, "Enter again your Password");
     } else {
-        //showSuccess(password2);
+        showSuccess(password2);
     }
 });
